@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Backoffice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fondo">
+  <main class="centro">
+    <section class="caja">
+      <header class="arriba">
+        <h1 class="titulo">Crear Cuenta</h1>
+        <p class="subtitulo">Regístrate en el Backoffice</p>
+      </header>
+
+      <form class="forma" action="login.html" method="get">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" minlength="3"
+            required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="Mínimo 6 caracteres" autocomplete="new-password"
+            minlength="6" required>
+        </div>
+
+        <div class="campo">
+          <label for="confirmar">Confirmar contraseña</label>
+          <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña"
+            autocomplete="new-password" minlength="6" required>
+        </div>
+
+        <button type="submit" class="boton">Registrarse</button>
+      </form>
+
+      <nav class="pie">
+        <p>¿Ya tienes cuenta? <a class="enlace" href="login.html">Inicia sesión</a></p>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Backoffice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fondo">
+  <main class="centro">
+    <section class="caja">
+      <header class="arriba">
+        <h1 class="titulo">Iniciar Sesión</h1>
+        <p class="subtitulo">Ingresa al panel Backoffice</p>
+      </header>
+
+      <form class="forma" action="index.html" method="get">
+        <div class="campo">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="••••••••" autocomplete="current-password"
+            minlength="6" required>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="recordar">
+          <span>Recordarme</span>
+        </label>
+
+        <button type="submit" class="boton">Entrar</button>
+      </form>
+
+      <nav class="pie">
+        <p>¿No tienes cuenta? <a class="enlace" href="register.html">Regístrate</a></p>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>
