@@ -4,11 +4,24 @@
   padding: 0;
 }
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 body.fondo {
   font-family: Arial, sans-serif;
   background-color: #000000;
   color: #ffffff;
   min-height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .centro {
@@ -238,10 +251,10 @@ body.fondo {
   background-color: #141414;
   border: 1px solid #2b2b2b;
   border-radius: 18px;
-  padding: 22px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  text-align: center;
 }
 
 .tarjeta h3 {
@@ -249,9 +262,26 @@ body.fondo {
   color: #ffffff;
 }
 
+.tarjeta img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tarjeta-info {
+  padding: 18px 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
 .desc-proyecto {
   font-size: 14px;
   color: #d4d4d4;
+  flex: 1;
 }
 
 .tecs-proyecto {
