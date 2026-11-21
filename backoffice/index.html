@@ -12,13 +12,18 @@
   <div class="panel">
     <header class="barra">
       <h1 class="titulo">Proyectos</h1>
-      <button id="btnAgregar" class="btn-chico">Agregar Proyecto</button>
+      <div class="acciones">
+        <button id="btnAgregar" class="btn-chico">Agregar Proyecto</button>
+        <button id="btnSalir" class="btn-chico btn-gris">Cerrar sesión</button>
+      </div>
     </header>
 
     <main class="contenido">
       <section id="cajaForm" class="caja-form oculto">
-        <h2 class="sub-titulo-panel">Agregar Proyecto</h2>
+        <h2 id="tituloForm" class="sub-titulo-panel">Agregar Proyecto</h2>
         <form id="formProyecto" class="forma">
+          <input type="hidden" id="proyectoId">
+
           <div class="campo">
             <label for="titulo">Título</label>
             <input type="text" id="titulo" placeholder="Nombre del proyecto" required>
@@ -39,21 +44,16 @@
             <input type="url" id="repositorio" placeholder="https://github.com/usuario/repo">
           </div>
 
-          <button type="submit" class="boton">Guardar</button>
+          <p id="mensaje" class="mensaje"></p>
+
+          <div class="acciones">
+            <button type="submit" id="btnGuardar" class="boton">Guardar</button>
+            <button type="button" id="btnCancelar" class="boton btn-gris">Cancelar</button>
+          </div>
         </form>
       </section>
 
-      <section class="tarjetas">
-        <article class="tarjeta">
-          <h3>Proyecto de Ejemplo</h3>
-          <p class="desc-proyecto">Descripción breve del proyecto registrado en el panel.</p>
-          <p class="tecs-proyecto">HTML, CSS, JavaScript</p>
-          <div class="acciones">
-            <button class="btn-chico">Actualizar</button>
-            <button class="btn-chico btn-gris">Eliminar</button>
-          </div>
-        </article>
-      </section>
+      <section id="listaProyectos" class="tarjetas"></section>
     </main>
   </div>
 

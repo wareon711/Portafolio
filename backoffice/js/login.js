@@ -30,6 +30,9 @@ form.addEventListener("submit", async function (e) {
     }
 
     localStorage.setItem("authToken", datos.token);
+    if (datos.user && datos.user.id) {
+      localStorage.setItem("userId", datos.user.id);
+    }
     window.location.href = "index.html";
   } catch (error) {
     mensaje.textContent = "Error al conectar con el servidor";
