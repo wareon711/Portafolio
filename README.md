@@ -2,12 +2,15 @@
 
 Repositorio general del portafolio de proyectos.
 
-## Proyectos incluidos
+## Ramas del proyecto
 
-### 1. Backoffice (`backoffice/`)
-Primer avance desarrollado con HTML y CSS responsivo.
+- `Avance-1`: Vistas estáticas en HTML y CSS (`index.html`, `login.html`, `register.html`, `css/style.css`).
+- `Avance-2`: Integración con JavaScript y la API de Portfolio (registro, login con token en `localStorage`, ruta protegida en `index.html` y CRUD de proyectos).
 
-- `backoffice/index.html`: Vista Home del Backoffice (redirige automáticamente a `login.html`).
-- `backoffice/login.html`: Vista de inicio de sesión con enlace a `register.html`.
-- `backoffice/register.html`: Vista de registro de usuario con enlace a `login.html`.
-- `backoffice/css/style.css`: Hoja de estilos principal con diseño responsivo, fondo negro y estilo deportivo.
+## Estructura (`backoffice/`)
+
+- `backoffice/index.html`: Panel principal (Home) protegido por token con CRUD de proyectos.
+- `backoffice/login.html`: Vista de inicio de sesión.
+- `backoffice/register.html`: Vista de registro de usuario.
+- `backoffice/css/style.css`: Hoja de estilos principal responsiva.
+- `backoffice/js/`: Scripts básicos en JavaScript (`login.js`, `registro.js`, `home.js`).

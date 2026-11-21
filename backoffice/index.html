@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=login.html">
   <title>Home | Backoffice</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="fondo">
-  <main class="centro">
-    <div class="bienvenida">
-      <h1 class="titulo">Bienvenido/a al Backoffice</h1>
-      <p class="subtitulo">Has iniciado sesión correctamente.</p>
-    </div>
-  </main>
+  <div class="panel">
+    <header class="barra">
+      <h1 class="titulo">Backoffice - Proyectos</h1>
+      <div class="acciones">
+        <button id="btnAgregar" class="btn-chico">Agregar Proyecto</button>
+        <button id="btnSalir" class="btn-chico btn-gris">Cerrar sesión</button>
+      </div>
+    </header>
+
+    <main class="contenido">
+      <section id="cajaForm" class="caja-form oculto">
+        <h2 id="tituloForm" class="sub-titulo-panel">Nuevo Proyecto</h2>
+        <form id="formProyecto" class="forma">
+          <input type="hidden" id="proyectoId">
+
+          <div class="campo">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" placeholder="Nombre del proyecto" required>
+          </div>
+
+          <div class="campo">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" rows="3" placeholder="Descripción breve" required></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="tecnologias">Tecnologías (separadas por coma)</label>
+            <input type="text" id="tecnologias" placeholder="HTML, CSS, JavaScript">
+          </div>
+
+          <div class="campo">
+            <label for="repositorio">Repositorio (URL)</label>
+            <input type="url" id="repositorio" placeholder="https://github.com/usuario/repo">
+          </div>
+
+          <p id="mensaje" class="mensaje"></p>
+
+          <div class="acciones">
+            <button type="submit" id="btnGuardar" class="boton">Guardar Proyecto</button>
+            <button type="button" id="btnCancelar" class="boton btn-gris">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="sub-titulo-panel">Proyectos Registrados</h2>
+        <div id="listaProyectos" class="tarjetas"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/home.js"></script>
 </body>
+
 </html>
