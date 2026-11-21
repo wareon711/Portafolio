@@ -22,7 +22,7 @@ body.fondo {
 .caja {
   width: 100%;
   max-width: 400px;
-  min-height: 520px;
+  min-height: 550px;
   background-color: #141414;
   border: 1px solid #2b2b2b;
   border-radius: 22px;
@@ -69,10 +69,12 @@ body.fondo {
   color: #d4d4d4;
 }
 
-.campo input {
+.campo input,
+.campo textarea {
   width: 100%;
   padding: 12px 15px;
   font-size: 14px;
+  font-family: Arial, sans-serif;
   color: #ffffff;
   background-color: #1f1f1f;
   border: 1px solid #333333;
@@ -80,7 +82,8 @@ body.fondo {
   outline: none;
 }
 
-.campo input:focus {
+.campo input:focus,
+.campo textarea:focus {
   border-color: #dc2626;
   background-color: #262626;
 }
@@ -98,10 +101,17 @@ body.fondo {
   accent-color: #dc2626;
 }
 
+.mensaje {
+  font-size: 13px;
+  color: #f87171;
+  text-align: center;
+  min-height: 18px;
+}
+
 .boton {
   width: 100%;
   padding: 13px;
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -137,7 +147,7 @@ body.fondo {
 }
 
 .panel {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 24px;
 }
@@ -146,26 +156,73 @@ body.fondo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 22px;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 24px;
   background-color: #141414;
   border: 1px solid #2b2b2b;
-  border-radius: 16px;
-  margin-bottom: 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+}
+
+.barra .titulo {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-chico {
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #dc2626;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-chico:hover {
+  background-color: #b91c1c;
+}
+
+.btn-gris {
+  background-color: #2b2b2b;
+}
+
+.btn-gris:hover {
+  background-color: #404040;
 }
 
 .contenido {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
-.aviso {
-  padding: 18px 20px;
+.caja-form {
   background-color: #141414;
   border: 1px solid #2b2b2b;
-  border-left: 4px solid #dc2626;
-  border-radius: 14px;
-  text-align: center;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.oculto {
+  display: none;
+}
+
+.sub-titulo-panel {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .tarjetas {
@@ -176,47 +233,43 @@ body.fondo {
 
 .tarjeta {
   flex: 1;
-  min-width: 200px;
+  min-width: 260px;
+  max-width: 320px;
   background-color: #141414;
   border: 1px solid #2b2b2b;
-  border-radius: 16px;
-  padding: 20px;
-  text-align: center;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.dato {
-  font-size: 26px;
-  font-weight: bold;
+.tarjeta h3 {
+  font-size: 18px;
   color: #ffffff;
-  margin-top: 8px;
 }
 
-.bienvenida {
-  text-align: center;
-  max-width: 700px;
+.desc-proyecto {
+  font-size: 14px;
+  color: #d4d4d4;
 }
 
-.bienvenida .titulo {
-  font-size: 42px;
-  margin-bottom: 14px;
+.tecs-proyecto {
+  font-size: 12px;
+  color: #a3a3a3;
 }
 
-.bienvenida .subtitulo {
-  font-size: 20px;
-  line-height: 1.5;
+.repo-link {
+  font-size: 13px;
 }
 
 @media (max-width: 480px) {
   .caja {
     padding: 28px 22px;
-    min-height: 490px;
+    min-height: 500px;
   }
 
-  .bienvenida .titulo {
-    font-size: 28px;
-  }
-
-  .bienvenida .subtitulo {
-    font-size: 16px;
+  .tarjeta {
+    max-width: 100%;
   }
 }

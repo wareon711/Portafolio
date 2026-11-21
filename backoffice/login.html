@@ -16,7 +16,7 @@
         <p class="subtitulo">Ingresa al panel Backoffice</p>
       </header>
 
-      <form class="forma" action="index.html" method="get">
+      <form class="forma" id="formLogin">
         <div class="campo">
           <label for="correo">Correo</label>
           <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required>
@@ -28,10 +28,7 @@
             minlength="6" required>
         </div>
 
-        <label class="check">
-          <input type="checkbox" name="recordar">
-          <span>Recordarme</span>
-        </label>
+        <p id="mensaje" class="mensaje"></p>
 
         <button type="submit" class="boton">Entrar</button>
       </form>
@@ -41,5 +38,8 @@
       </nav>
     </section>
   </main>
+
+  <script src="js/login.js"></script>
 </body>
+
 </html>

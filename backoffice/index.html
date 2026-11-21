@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=login.html">
   <title>Home | Backoffice</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="fondo">
-  <main class="centro">
-    <div class="bienvenida">
-      <h1 class="titulo">Bienvenido/a al Backoffice</h1>
-      <p class="subtitulo">Has iniciado sesión correctamente.</p>
-    </div>
-  </main>
+  <div class="panel">
+    <header class="barra">
+      <h1 class="titulo">Proyectos</h1>
+      <button id="btnAgregar" class="btn-chico">Agregar Proyecto</button>
+    </header>
+
+    <main class="contenido">
+      <section id="cajaForm" class="caja-form oculto">
+        <h2 class="sub-titulo-panel">Agregar Proyecto</h2>
+        <form id="formProyecto" class="forma">
+          <div class="campo">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" placeholder="Nombre del proyecto" required>
+          </div>
+
+          <div class="campo">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" rows="3" placeholder="Descripción breve" required></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="tecnologias">Tecnologías</label>
+            <input type="text" id="tecnologias" placeholder="HTML, CSS, JS">
+          </div>
+
+          <div class="campo">
+            <label for="repositorio">Repositorio</label>
+            <input type="url" id="repositorio" placeholder="https://github.com/usuario/repo">
+          </div>
+
+          <button type="submit" class="boton">Guardar</button>
+        </form>
+      </section>
+
+      <section class="tarjetas">
+        <article class="tarjeta">
+          <h3>Proyecto de Ejemplo</h3>
+          <p class="desc-proyecto">Descripción breve del proyecto registrado en el panel.</p>
+          <p class="tecs-proyecto">HTML, CSS, JavaScript</p>
+          <div class="acciones">
+            <button class="btn-chico">Actualizar</button>
+            <button class="btn-chico btn-gris">Eliminar</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/home.js"></script>
 </body>
+
 </html>
