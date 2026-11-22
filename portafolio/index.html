@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Gibran Alonso Ibarra Palomares</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+
+<body>
+  <header class="barra">
+    <div class="contenedor fila">
+      <a href="#inicio" class="logo">Gibran<span>Ibarra</span></a>
+      <button id="btnMenu" class="btn-menu" aria-label="Abrir menú"><i class="bx bx-menu"></i></button>
+      <nav id="menu" class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio">
+      <div class="contenedor centro" data-aos="fade-up">
+        <div class="avatar">GI</div>
+        <h1>Hola, soy Gibran Alonso Ibarra Palomares</h1>
+        <p>Aquí comparto mis proyectos y las tecnologías que sé usar.</p>
+        <div class="botones">
+          <a href="#proyectos" class="boton">Ver Proyectos</a>
+          <a href="#contacto" class="boton btn-gris">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor centro" data-aos="fade-up">
+        <h2 class="titulo">Sobre mí</h2>
+        <div class="caja">
+          <p>
+            Soy estudiante de Ingeniería en Software en quinto semestre. Me apasiona aprender nuevas tecnologías,
+            resolver problemas con código y seguir mejorando tanto en desarrollo web como en bases de datos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion">
+      <div class="contenedor centro">
+        <h2 class="titulo" data-aos="fade-up">Habilidades</h2>
+        <div class="lista">
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-html5"></i>
+            <h3>HTML</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-css3"></i>
+            <h3>CSS</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-javascript"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-java"></i>
+            <h3>Java</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-python"></i>
+            <h3>Python</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxs-data"></i>
+            <h3>MySQL</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bx-server"></i>
+            <h3>SQL Server</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-postgresql"></i>
+            <h3>PostgreSQL</h3>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <i class="bx bxl-git"></i>
+            <h3>GitHub</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <div class="contenedor centro">
+        <h2 class="titulo" data-aos="fade-up">Mis Proyectos</h2>
+        <p id="estado" class="texto-gris">Cargando proyectos...</p>
+        <div id="listaProyectos" class="lista"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <div class="contenedor centro" data-aos="fade-up">
+        <h2 class="titulo">Contacto</h2>
+        <p class="texto-gris">Puedes contactarme por correo o ver mi código en GitHub.</p>
+        <div class="botones">
+          <a href="https://mail.google.com/mail/?view=cm&to=ibarragibran3@gmail.com" target="_blank" class="boton"><i class="bx bx-envelope"></i> ibarragibran3@gmail.com</a>
+          <a href="https://github.com/wareon711" target="_blank" class="boton btn-gris"><i class="bx bxl-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Portafolio 2026 - Gibran Alonso Ibarra Palomares</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
